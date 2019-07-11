@@ -9,7 +9,7 @@ React hooks requires the newest version (version 16.8) of React to use but is ba
 The easiest way to get started with React is to use create-react-app provided by the npx package runner. Start by cloning this repository, `cd` into this project directory and run this command.
 
 ```
-$ npx create-react-app .
+$ npx create-react-app counter-example
 ```
 
 This will scaffold out a basic React application inside this project directory.
