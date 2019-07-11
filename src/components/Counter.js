@@ -1,5 +1,5 @@
 import React from 'react';
-import {CounterContext} from '../store/simpleContext';
+import {CounterContext} from '../store/counterContext';
 
 function Counter(){
   return(
