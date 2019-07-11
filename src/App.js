@@ -1,20 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import {CounterProvider} from './store/counterContext';
+import Counter from './components/Counter';
 
-function App(){
-  const [count, setCount] = useState(0);
-
-  useEffect(function(){
-    // This will log 'Foo!' to the console
-    // every time the component is re-rendered
-    console.log("Foo!")
-  })
-
+function App() {
   return (
-    <div>
-      <p>Current Count: {count}</p>
-      <button onClick={()=> setCount(count + 1)}>Change Count</button>
+    <div className="App">
+      <CounterProvider>
+        <Counter/>
+      </CounterProvider>
     </div>
-  )
+  );
 }
 
 export default App;
